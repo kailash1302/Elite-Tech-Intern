@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Layout */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #87ceeb, #ffffff);
+    color: #333;
+    line-height: 1.5;
+    padding: 20px;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Header */
+  .header {
+    background: #004b8d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  /* Main Converter Section */
+  .converter {
+    padding: 20px;
+  }
+  
+  .input-section,
+  .dropdown-section,
+  .result-section {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #004b8d;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 75, 141, 0.5);
+  }
+  
+  #error-message {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  /* Button */
+  #convert-btn {
+    width: 100%;
+    padding: 10px;
+    background: #004b8d;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  #convert-btn:hover {
+    background: #003366;
+  }
+  
+  /* Result Section */
+  .result-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .result-section #result {
+    font-size: 1.2rem;
+    color: #004b8d;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #004b8d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 480px) {
+    .header h1 {
+      font-size: 1.8rem;
+    }
+  
+    label {
+      font-size: 0.95rem;
+    }
+  
+    input,
+    select,
+    #convert-btn {
+      font-size: 0.95rem;
+    }
+  
+    .result-section h2 {
+      font-size: 1.2rem;
+    }
+  }
+  
